@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    max-width: 330px;
+    margin: 0 auto;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    cursor: pointer;
+  }
+  
+  .cell[data-cell="0"],
+  .cell[data-cell="1"],
+  .cell[data-cell="2"] {
+    border-top: none;
+  }
+  
+  .cell[data-cell="6"],
+  .cell[data-cell="7"],
+  .cell[data-cell="8"] {
+    border-bottom: none;
+  }
+  
+  .cell[data-cell="0"],
+  .cell[data-cell="3"],
+  .cell[data-cell="6"] {
+    border-left: none;
+  }
+  
+  .cell[data-cell="2"],
+  .cell[data-cell="5"],
+  .cell[data-cell="8"] {
+    border-right: none;
+  }
+  
+  button#restart {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
